@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Login to Docker Hub
-        uses: docker/login-action@v1 #reusing existing action(container) from docker
+        uses: docker/login-action@v2 #reusing existing action(container) from docker
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN}}
